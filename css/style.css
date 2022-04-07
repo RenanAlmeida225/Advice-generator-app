@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: #202632;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#advice-container {
+  width: 450px;
+  height: 300px;
+  background-color: #313a49;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+#advice-container .advice-id span {
+  display: block;
+  margin: 30px 0;
+  color: #53ffaa;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+#advice-container .advice span {
+  display: block;
+  text-align: center;
+  color: #c4d8df;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#advice-container .divisor span {
+  width: 50px;
+  height: 50px;
+  color: #c4d8df;
+  font-size: 30px;
+  background-color: #313a49;
+}
+
+#advice-container .divisor span::before {
+  content: "";
+  position: relative;
+  top: -11px;
+  width: 150px;
+  height: 1px;
+  display: inline-block;
+  background-color: rgba(196, 216, 223, 0.357);
+}
+
+#advice-container .divisor span::after {
+  content: "";
+  position: relative;
+  top: -11px;
+  width: 150px;
+  height: 1px;
+  display: inline-block;
+  background-color: rgba(196, 216, 223, 0.357);
+}
+
+#advice-container .btn-advice button {
+  position: absolute;
+  top: 455px;
+  left: 660px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #53ffaa;
+  font-size: 1.2em;
+  transition: 0.5s;
+}
+
+#advice-container .btn-advice button:hover {
+  box-shadow: rgba(83, 255, 170) 0px 7px 29px 0px;
+}
