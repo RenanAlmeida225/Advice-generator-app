@@ -1,11 +1,21 @@
 //'https://api.adviceslip.com/advice'
 
-fetch('https://api.adviceslip.com/advice')
-	.then(res => {
-		return res.json();
-	})
-	.then(data => {
-		return data.slip;
-	})
-	.then(slip => console.log(slip.advice, slip.id))
-	.catch(error => console.error('deu erro aqui:', error));
+document.getElementById('advice-btn').addEventListener('click', () => {
+	fetch('https://api.adviceslip.com/advice')
+		.then(res => {
+			return res.json();
+		})
+		.then(data => {
+			return data.slip;
+		})
+		.then(slip => {
+			document.querySelector(
+				'.advice-id'
+			).innerHTML = `<span>ADVICE #${slip.id}</span>`;
+
+			document.querySelector(
+				'.advice'
+			).innerHTML = `<span>"${slip.advice}"</span>`;
+		})
+		.catch(error => console.error('error:', error));
+});

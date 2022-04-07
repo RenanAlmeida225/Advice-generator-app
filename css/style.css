@@ -87,7 +87,7 @@ main {
   cursor: pointer;
   background-color: #53ffaa;
   font-size: 1.2em;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 #advice-container .btn-advice button:hover {
