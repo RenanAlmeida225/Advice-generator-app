@@ -1,6 +1,6 @@
 //'https://api.adviceslip.com/advice'
 
-document.getElementById('advice-btn').addEventListener('click', () => {
+document.querySelector('.btn-advice').addEventListener('click', () => {
 	fetch('https://api.adviceslip.com/advice')
 		.then(res => {
 			return res.json();

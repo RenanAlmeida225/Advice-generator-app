@@ -20,8 +20,9 @@ main {
 }
 
 #advice-container {
+  position: relative;
   width: 450px;
-  height: 300px;
+  min-height: 300px;
   background-color: #313a49;
   border-radius: 15px;
   display: flex;
@@ -30,8 +31,7 @@ main {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
-#advice-container .advice-id span {
-  display: block;
+#advice-container .advice-id{
   margin: 30px 0;
   color: #53ffaa;
   font-size: 12px;
@@ -39,57 +39,35 @@ main {
   letter-spacing: 5px;
 }
 
-#advice-container .advice span {
-  display: block;
+#advice-container .advice{
   text-align: center;
+  width: 80%;
   color: #c4d8df;
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
-#advice-container .divisor span {
-  width: 50px;
-  height: 50px;
-  color: #c4d8df;
-  font-size: 30px;
-  background-color: #313a49;
+
+#advice-container .divisor{
+  margin: 30px 0 50px 0;
+  width: 80%;
+  height: 30px;
+  background: url('../images/pattern-divider-desktop.svg') no-repeat center center;
 }
 
-#advice-container .divisor span::before {
-  content: "";
-  position: relative;
-  top: -11px;
-  width: 150px;
-  height: 1px;
-  display: inline-block;
-  background-color: rgba(196, 216, 223, 0.357);
-}
-
-#advice-container .divisor span::after {
-  content: "";
-  position: relative;
-  top: -11px;
-  width: 150px;
-  height: 1px;
-  display: inline-block;
-  background-color: rgba(196, 216, 223, 0.357);
-}
-
-#advice-container .btn-advice button {
+#advice-container button.btn-advice{
   position: absolute;
-  top: 455px;
-  left: 660px;
+  top:calc(100% - 25px);
+  left: calc(50% - 25px);
   width: 50px;
   height: 50px;
   border: none;
   border-radius: 50%;
-  cursor: pointer;
   background-color: #53ffaa;
-  font-size: 1.2em;
+  cursor: pointer;
   transition: 0.3s;
 }
 
-#advice-container .btn-advice button:hover {
-  box-shadow: rgba(83, 255, 170) 0px 7px 29px 0px;
+#advice-container button.btn-advice:hover{
+  box-shadow: 0px 0px 29px 8px rgba(83,255,170,0.6);
 }
