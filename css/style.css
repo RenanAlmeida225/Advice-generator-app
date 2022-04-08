@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
+:root{
+  /* Primary */
+  --lightCyan: hsl(193, 38%, 86%);
+  --neonGreen: hsl(150, 100%, 66%);
+  /* Neutral */
+  --grayishBlue: hsl(217, 19%, 38%);
+  --darkGrayishBlue: hsl(217, 19%, 24%);
+  --darkBlue: hsl(218, 23%, 16%);
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +19,7 @@
 }
 
 body {
-  background-color: #202632;
+  background-color: var(--darkBlue);
 }
 
 main {
@@ -23,7 +34,7 @@ main {
   position: relative;
   width: 450px;
   min-height: 300px;
-  background-color: #313a49;
+  background-color: var(--darkGrayishBlue);
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -33,7 +44,7 @@ main {
 
 #advice-container .advice-id{
   margin: 30px 0;
-  color: #53ffaa;
+  color: var(--neonGreen);
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 5px;
@@ -42,7 +53,7 @@ main {
 #advice-container .advice{
   text-align: center;
   width: 80%;
-  color: #c4d8df;
+  color: var(--lightCyan);
   font-size: 28px;
   font-weight: bold;
 }
@@ -63,11 +74,23 @@ main {
   height: 50px;
   border: none;
   border-radius: 50%;
-  background-color: #53ffaa;
+  background-color: var(--neonGreen);
   cursor: pointer;
   transition: 0.3s;
 }
 
 #advice-container button.btn-advice:hover{
   box-shadow: 0px 0px 29px 8px rgba(83,255,170,0.6);
+}
+
+@media only screen and (max-width: 475px){
+  #advice-container{
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  #advice-container{
+    width: 250px;
+  }
 }
