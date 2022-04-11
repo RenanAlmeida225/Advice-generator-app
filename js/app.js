@@ -1,7 +1,14 @@
-//'https://api.adviceslip.com/advice'
+const palceholder = document.querySelector('.palceholder');
+const dice = document.getElementById('dice');
 
-document.querySelector('.btn-advice').addEventListener('click', () => {
-	fetch('https://api.adviceslip.com/advice')
+document.querySelector('.btn-advice').addEventListener('click', async () => {
+	if (palceholder) {
+		palceholder.remove();
+	}
+
+	dice.style.animation = 'rotation 2s linear';
+
+	await fetch('https://api.adviceslip.com/advice')
 		.then(res => {
 			return res.json();
 		})
@@ -16,6 +23,8 @@ document.querySelector('.btn-advice').addEventListener('click', () => {
 			document.querySelector(
 				'.advice'
 			).innerHTML = `<span>"${slip.advice}"</span>`;
+
+			dice.style.animation = '';
 		})
 		.catch(error => console.error('error:', error));
 });

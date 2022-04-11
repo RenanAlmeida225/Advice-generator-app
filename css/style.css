@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
-:root{
+:root {
   /* Primary */
   --lightCyan: hsl(193, 38%, 86%);
   --neonGreen: hsl(150, 100%, 66%);
@@ -10,6 +10,14 @@
   --darkBlue: hsl(218, 23%, 16%);
 }
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 
 * {
   margin: 0;
@@ -42,7 +50,7 @@ main {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
-#advice-container .advice-id{
+#advice-container .advice-id {
   margin: 30px 0;
   color: var(--neonGreen);
   font-size: 12px;
@@ -50,7 +58,7 @@ main {
   letter-spacing: 5px;
 }
 
-#advice-container .advice{
+#advice-container .advice {
   text-align: center;
   width: 80%;
   color: var(--lightCyan);
@@ -58,17 +66,17 @@ main {
   font-weight: bold;
 }
 
-
-#advice-container .divisor{
+#advice-container .divisor {
   margin: 30px 0 50px 0;
   width: 80%;
   height: 30px;
-  background: url('../images/pattern-divider-desktop.svg') no-repeat center center;
+  background: url("../images/pattern-divider-desktop.svg") no-repeat center
+    center;
 }
 
-#advice-container button.btn-advice{
+#advice-container button.btn-advice {
   position: absolute;
-  top:calc(100% - 25px);
+  top: calc(100% - 25px);
   left: calc(50% - 25px);
   width: 50px;
   height: 50px;
@@ -79,18 +87,18 @@ main {
   transition: 0.3s;
 }
 
-#advice-container button.btn-advice:hover{
-  box-shadow: 0px 0px 29px 8px rgba(83,255,170,0.6);
+#advice-container button.btn-advice:hover {
+  box-shadow: 0px 0px 29px 8px rgba(83, 255, 170, 0.6);
 }
 
-@media only screen and (max-width: 475px){
-  #advice-container{
+@media only screen and (max-width: 475px) {
+  #advice-container {
     width: 300px;
   }
 }
 
-@media only screen and (max-width: 320px){
-  #advice-container{
+@media only screen and (max-width: 320px) {
+  #advice-container {
     width: 250px;
   }
 }
