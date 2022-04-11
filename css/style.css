@@ -88,7 +88,7 @@ main {
 }
 
 #advice-container button.btn-advice:hover {
-  box-shadow: 0px 0px 29px 8px rgba(83, 255, 170, 0.6);
+  box-shadow: 0px 0px 15px 10px rgba(83, 255, 169, 0.20);
 }
 
 @media only screen and (max-width: 475px) {

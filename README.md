@@ -2,7 +2,7 @@
 
 ## Desafio do **frontend mentor**!
 
-O [**desafio**](https://) consiste em construir um aplicativo gerador de conselhos
+O [**desafio**](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db) consiste em construir um aplicativo gerador de conselhos
 usando a [**API Advice Slip**](https://api.adviceslip.com/) e fazê-lo parecer o mais próximo possível do design.
 
 - ### Tecnologias usadas:
