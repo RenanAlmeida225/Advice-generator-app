@@ -6,12 +6,12 @@ O [**desafio**](https://) consiste em construir um aplicativo gerador de conselh
 usando a [**API Advice Slip**](https://api.adviceslip.com/) e fazê-lo parecer o mais próximo possível do design.
 
 - ### Tecnologias usadas:
-    - `Html`
-    - `Css`
-    - `JavaScript`
+  - `Html`
+  - `Css`
+  - `JavaScript`
 
 ### Screenshot:
 
 ![alt](images/screenshot.png)
 
-Clique [**aqui**](#) para ver como ficou!
+Clique [**aqui**](https://renanalmeida225.github.io/Advice-generator-app/) para ver como ficou!
